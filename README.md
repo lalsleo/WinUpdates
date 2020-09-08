@@ -1,2 +1,0 @@
-# WinUpdates
-Install WinUpdates
