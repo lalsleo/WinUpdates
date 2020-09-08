@@ -10,6 +10,7 @@
       - SecurityUpdates
       - UpdateRollups
       state: installed
+      log_path: c:\temp\ansible_wu.txt
     register: update_result
 
   - name: reboot host if required
