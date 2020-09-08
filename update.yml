@@ -6,6 +6,7 @@
   - name: Install all critical and security updates
     win_updates:
       category_names: "{{ win_update_category }}"
+      server_selection: "{{ win_update_server_selection }}"
       state: installed
       log_path: c:\temp\ansible_wu.txt
     register: update_result
