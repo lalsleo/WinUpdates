@@ -5,10 +5,7 @@
   tasks:
   - name: Install all critical and security updates
     win_updates:
-      category_names:
-      - CriticalUpdates
-      - SecurityUpdates
-      - UpdateRollups
+      category_names: "{{ win_update_category }}"
       state: installed
       log_path: c:\temp\ansible_wu.txt
     register: update_result
